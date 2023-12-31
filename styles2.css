@@ -1,49 +1,21 @@
-/* Estilos para o card da receita */
-.recipe-card {
-    width: calc(33.33% - 20px); /* Ajuste conforme necessário para o espaçamento */
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .recipe-image {
-    width: 100%; /* Imagem ocupando toda a largura do card */
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 8px;
-  }
-  
-  .ingredient-list {
-    list-style: none;
-    padding-left: 100px;
-    padding-top: 10px;
-    list-style-type: disc;
-    text-align: left;
-    font-weight: bold;
-  }
-
-  .ingredient-preparo {
-    list-style: none;
-    padding-top: 10px;
-    text-align: left;
-    font-weight: bold;
-  }
-  
 /* Reset de estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  img {
+    border-radius: 5%;
+    display: flex;
+    border-left: 50px;
+  }
   
   /* Estilos gerais */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f7cf7b;
+    background-color: #023047;
     margin-bottom: 60px; /* Adicionando espaço para o rodapé */
   }
   
@@ -54,8 +26,8 @@
   }
   
   header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fb8500;
+    color: #000000;
   }
   
   .navbar {
@@ -73,8 +45,16 @@
   }
   
   .navbar ul li a {
-    color: #fff;
+    color: #023047;
     text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+      text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
   }
   
   .navbar ul li a:hover {
@@ -83,28 +63,42 @@
   
   main {
     text-align: center;
-    padding-top: 100px;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-direction: row;
+    padding-right: 20px;
+    grid-gap: 5px 20px;
   }
   
   .center-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #ffffff;
   }
   
   .logo {
-    width: 150px; /* ajuste o tamanho conforme necessário */
-    height: auto;
+    display: flex;
+    width: 360px; /* ajuste o tamanho conforme necessário */
+    height: 540px;
+    border: 2px solid #fb8500;
   }
   
   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333;
-    color: #fff;
+    background-color: #fb8500;
+    color: #fffbfb;
     text-align: center;
     padding: 0.2px;
+    color: #000;
+      text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
   }
   
   footer p {
@@ -112,9 +106,12 @@
   }
   
   .frase {
+    display: flex;
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: large;
+    text-align: justify;
+    color: #ffffff;
   }
 
   /* Estilos para tornar o menu responsivo */
@@ -129,8 +126,3 @@
       margin: 10px 0;
     }
   }
-
-  
-
-
-  
